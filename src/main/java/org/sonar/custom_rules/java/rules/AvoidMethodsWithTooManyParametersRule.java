@@ -5,7 +5,6 @@ import org.sonar.plugins.java.api.IssuableSubscriptionVisitor;
 import org.sonar.plugins.java.api.tree.MethodTree;
 import org.sonar.plugins.java.api.tree.Tree;
 
-import javax.annotation.Nonnull;
 import java.util.Collections;
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class AvoidMethodsWithTooManyParametersRule extends IssuableSubscriptionV
     }
 
     @Override
-    public void visitNode(@Nonnull Tree tree) {
+    public void visitNode(Tree tree) {
         MethodTree methodTree = (MethodTree) tree;
         if (methodTree.parameters().size() > MAX_NUMBER_OF_PARAMETERS) {
             reportIssue(methodTree, "Too many parameters in method!!!");

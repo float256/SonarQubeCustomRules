@@ -1,0 +1,7 @@
+{
+  "title": "Avoid loops with big nesting level",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "tags": [],
+  "defaultSeverity": "Minor"
+}

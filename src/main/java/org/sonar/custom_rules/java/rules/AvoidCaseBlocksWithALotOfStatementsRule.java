@@ -6,7 +6,6 @@ import org.sonar.plugins.java.api.tree.CaseGroupTree;
 import org.sonar.plugins.java.api.tree.SwitchStatementTree;
 import org.sonar.plugins.java.api.tree.Tree;
 
-import javax.annotation.Nonnull;
 import java.util.Collections;
 import java.util.List;
 
@@ -21,7 +20,7 @@ public class AvoidCaseBlocksWithALotOfStatementsRule extends IssuableSubscriptio
     }
 
     @Override
-    public void visitNode(@Nonnull Tree tree) {
+    public void visitNode(Tree tree) {
         SwitchStatementTree switchStatementTree = (SwitchStatementTree) tree;
         List<CaseGroupTree> allCaseBlocks = switchStatementTree.cases();
         allCaseBlocks.forEach(caseGroupTree -> {

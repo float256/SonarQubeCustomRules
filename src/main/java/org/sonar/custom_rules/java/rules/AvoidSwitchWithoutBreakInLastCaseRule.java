@@ -4,7 +4,6 @@ import org.sonar.check.Rule;
 import org.sonar.plugins.java.api.IssuableSubscriptionVisitor;
 import org.sonar.plugins.java.api.tree.*;
 
-import javax.annotation.Nonnull;
 import java.util.Collections;
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class AvoidSwitchWithoutBreakInLastCaseRule extends IssuableSubscriptionV
     }
 
     @Override
-    public void visitNode(@Nonnull Tree tree) {
+    public void visitNode(Tree tree) {
         SwitchStatementTree switchStatementTree = (SwitchStatementTree) tree;
         List<CaseGroupTree> allCaseBlocks = switchStatementTree.cases();
         if (!allCaseBlocks.isEmpty()) {

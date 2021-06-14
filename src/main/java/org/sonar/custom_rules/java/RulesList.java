@@ -1,6 +1,7 @@
 package org.sonar.custom_rules.java;
 
 import org.sonar.custom_rules.java.rules.AvoidCaseBlocksWithALotOfStatementsRule;
+import org.sonar.custom_rules.java.rules.AvoidLoopsWithBigNestingLevelRule;
 import org.sonar.custom_rules.java.rules.AvoidSwitchWithoutBreakInLastCaseRule;
 import org.sonar.plugins.java.api.JavaCheck;
 import org.sonar.custom_rules.java.rules.AvoidMethodsWithTooManyParametersRule;
@@ -25,7 +26,8 @@ public class RulesList {
         return Collections.unmodifiableList(Arrays.asList(
                 AvoidMethodsWithTooManyParametersRule.class,
                 AvoidSwitchWithoutBreakInLastCaseRule.class,
-                AvoidCaseBlocksWithALotOfStatementsRule.class));
+                AvoidCaseBlocksWithALotOfStatementsRule.class,
+                AvoidLoopsWithBigNestingLevelRule.class));
     }
 
     public static List<Class<? extends JavaCheck>> getTestChecks() {
