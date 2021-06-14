@@ -1,0 +1,7 @@
+{
+  "title": "Method shouldn't contain more than five parameters",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "tags": [],
+  "defaultSeverity": "Minor"
+}

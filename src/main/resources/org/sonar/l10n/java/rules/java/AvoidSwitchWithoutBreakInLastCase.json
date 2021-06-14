@@ -1,0 +1,7 @@
+{
+  "title": "The last case statement must contain a break statement.",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "tags": [],
+  "defaultSeverity": "Blocker"
+}

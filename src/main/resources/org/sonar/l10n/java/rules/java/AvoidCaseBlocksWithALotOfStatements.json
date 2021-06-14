@@ -1,0 +1,7 @@
+{
+  "title": "Avoid case blocks with a lot of statements",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "tags": [],
+  "defaultSeverity": "Minor"
+}
